@@ -1,3 +1,4 @@
+require('update-electron-app')()
 const { app, BrowserWindow, ipcMain } = require('electron')
 const { join } = require('node:path')
 
@@ -6,7 +7,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     webPreferences: {
-      preload: join(__dirname, 'preload.cjs'),
+      preload: join(__dirname, 'preload.js'),
     },
   })
 

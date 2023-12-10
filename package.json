@@ -2,8 +2,8 @@
   "name": "my-electron-app",
   "version": "1.0.0",
   "description": "electron app",
-  "type": "module",
-  "main": "main.js",
+  "type": "commonjs",
+  "main": "main.cjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
